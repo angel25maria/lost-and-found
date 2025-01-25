@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        // Function to fetch and display lost items
+        function loadLostItems() {
+            fetch('http://127.0.0.1:5000/api/lost-items')
+                .then(response => response.json())
+                .then(data => {
+                    const lostItemsList = document.getElementById('lost-items-list');
+                    lostItemsList.innerHTML = '';  // Clear previous items
+                    data.forEach(item => {
+                        const itemElement = document.createElement('li');
+                        itemElement.innerHTML = `
+                            <strong>${item.name}</strong> - ${item.category}<br>
+                            <a href="/lost-item/${item.id}">View Details</a>
+                        `;
+                        lostItemsList.appendChild(itemElement);
+                    });
+                })
+                .catch(error => console.error('Error fetching lost items:', error));
+        }
+
+        // Function to fetch and display found items
+        function loadFoundItems() {
+            fetch('http://127.0.0.1:5000/api/found-items')
+                .then(response => response.json())
+                .then(data => {
+                    const foundItemsList = document.getElementById('found-items-list');
+                    foundItemsList.innerHTML = '';  // Clear previous items
+                    data.forEach(item => {
+                        const itemElement = document.createElement('li');
+                        itemElement.innerHTML = `
+                            <strong>${item.category}</strong><br>
+                            <a href="/found-item/${item.id}">View Details</a>
+                        `;
+                        foundItemsList.appendChild(itemElement);
+                    });
+                })
+                .catch(error => console.error('Error fetching found items:', error));
+        }
+
+        // Load items on page load
+        window.onload = function() {
+            loadLostItems();
+            loadFoundItems();
+        };
+    </script>
+</head>
+<body>
+    <h1>Lost and Found Items</h1>
+
+    <h2>Lost Items</h2>
+    <ul id="lost-items-list">
+        <!-- Lost items will be listed here -->
+    </ul>
+
+    <h2>Found Items</h2>
+    <ul id="found-items-list">
+        <!-- Found items will be listed here -->
+    </ul>
+
+    <a href="/lost">Report Lost Item</a> | 
+    <a href="/found">Report Found Item</a>
+</body>
+</html>
