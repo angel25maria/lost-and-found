@@ -1,94 +1,58 @@
 
-# [Project Name] 🎯
+# LOST AND FOUND MAPPING 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: SPARK SQUAD
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Fathima Sherin MC - Toch Institute of Science and Technology
+- Member 2: Angel Maria Saju - Toch Institute of Science and Technology
+- Member 3: Nidhisha Raj P - Toch Institute of Science and Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+Lost and Found mapping refers to a system or process used to track,catalog,and organise lost items and match them with their rightful owners.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+when one finds a misplaced item and is feels helpless in finding and returning it to the real owner.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+this app provides a platform to upload lost items and also found items. This helps to return the lost itms to the real owners.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages used- python flask, html,java script,css
+- Frameworks used- python web framework, html,css
+- Libraries used- flask SQLAIchemy
+- Tools used-python,css,html,css
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
-For Software:
+For Software: visual studio code
 # Installation
-[commands]
+clone the repository
 
 # Run
-[commands]
+set up a virtual environment 
 
 ### Project Documentation
 For Software:
+report lost items
+report found items
+search both lost and found items
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+https://drive.google.com/file/d/1rPwDHfz14oQptD3xJ8frGwwvVx4RU_QH/view?usp=sharing
+https://drive.google.com/file/d/1U0uV2pYhnRahnU5BdsUwlpS0NixpHkQO/view?usp=sharing
+https://drive.google.com/file/d/1r8ZLGqFy-2fpCdx4X2JcJNlKugcwPSb-/view?usp=sharing
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Nidhisha Raj p: Frontend
+- Fathima Sherin MC: Backend
+- Angel Maria Saju: Logo designing / frontend
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
