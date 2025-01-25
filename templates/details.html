@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ item_type }} Item Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>{{ item_type }} Item Details</h1>
+    <div class="item-details">
+        <p><strong>Name:</strong> {{ item.name if item_type == "Lost" else 'N/A' }}</p>
+        <p><strong>Description:</strong> {{ item.description }}</p>
+        <p><strong>Location:</strong> {{ item.location }}</p>
+        <p><strong>Date:</strong> {{ item.date }}</p>
+        <p><strong>Category:</strong> {{ item.category }}</p>
+        <p><strong>Contact Information:</strong> {{ item.contact }}</p>
+        
+        {% if item.image %}
+            <p><strong>Image:</strong><br><img src="{{ url_for('static', filename='uploads/' + item.image.split('/')[-1]) }}" alt="Item Image" width="200"></p>
+        {% endif %}
+        
+        <a href="/search">Back to Search</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Lost and Found System
+
+A simple Flask-based web application for reporting and searching lost and found items.
+
+## Features
+- Report lost items
+- Report found items
+- Search through lost and found items
+
+## Setup
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the app: `python app.py`
+3. Open your browser and navigate to `http://127.0.0.1:5000/`.
